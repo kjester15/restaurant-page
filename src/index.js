@@ -1,7 +1,7 @@
 import Restaurant from './image.jpg';
 import './style.css';
 
-function body() {
+function home() {
   const title = document.createElement('h1')
   title.innerHTML = "Byte Bistro";
   document.getElementById("content").appendChild(title);
@@ -17,4 +17,4 @@ function body() {
 }
 
 // document.getElementById("content").appendChild(component());
-body();
+home();
