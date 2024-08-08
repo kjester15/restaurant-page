@@ -1,6 +1,7 @@
 import Restaurant from '../image.jpg';
 
 export function home() {
+  document.getElementById("content").innerHTML="";
   const title = document.createElement('h1')
   title.innerHTML = "Byte Bistro";
   document.getElementById("content").appendChild(title);
