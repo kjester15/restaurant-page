@@ -9,6 +9,7 @@ export function menu() {
   document.getElementById("content").appendChild(title);
 
   const tempura = document.createElement('div');
+  tempura.classList.add("menu-item")
   const tempuraTitle = document.createElement('h3');
   tempuraTitle.innerHTML = "Function-Fried Tempura";
   tempura.appendChild(tempuraTitle);
@@ -22,6 +23,7 @@ export function menu() {
   document.getElementById("content").appendChild(tempura);
 
   const sushi = document.createElement('div');
+  sushi.classList.add("menu-item")
   const sushiTitle = document.createElement('h3');
   sushiTitle.innerHTML = "Asynchronous Sushi Rolls";
   sushi.appendChild(sushiTitle);
@@ -35,6 +37,7 @@ export function menu() {
   document.getElementById("content").appendChild(sushi);
 
   const ramen = document.createElement('div');
+  ramen.classList.add("menu-item")
   const ramenTitle = document.createElement('h3');
   ramenTitle.innerHTML = "Event-Driven Ramen Bowl";
   ramen.appendChild(ramenTitle);
