@@ -1,20 +1,17 @@
-import Restaurant from './image.jpg';
 import './style.css';
+import { home } from "./modules/home";
+import { menu } from "./modules/menu";
+import { contact } from "./modules/contact";
 
-function home() {
-  const title = document.createElement('h1')
-  title.innerHTML = "Byte Bistro";
-  document.getElementById("content").appendChild(title);
 
-  const text = document.createElement('p')
-  text.innerHTML = "At Byte Bistro, we’ve redefined dining with our JavaScript-inspired menu, featuring dishes that are as dynamic and versatile as the code itself. Whether you're a tech enthusiast or simply hungry for something extraordinary, Byte Bistro is the place where every meal is a delightful piece of culinary code.";
-  document.getElementById("content").appendChild(text);
+document.getElementById("home").addEventListener("click", function() {
+  home();
+});
 
-  const image = document.createElement('img')
-  image.src = Restaurant;
-  image.classList.add('image');
-  document.getElementById("content").appendChild(image);
-}
+document.getElementById("menu").addEventListener("click", function() {
+  menu();
+});
 
-// document.getElementById("content").appendChild(component());
-home();
+document.getElementById("contact").addEventListener("click", function() {
+  contact();
+});
